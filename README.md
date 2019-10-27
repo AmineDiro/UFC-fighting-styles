@@ -3,7 +3,6 @@ A clustering approach to analyze the fighting styles of mma fighter
 
 
 ## Background about the project
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 ![MMA 'Fighting Styles'](https://legendsmma.net/wp-content/uploads/2018/08/Legends-MMA-Infographics.jpg)
 
