@@ -26,11 +26,11 @@ Now armed with the dataset :
 ### Result of PCA
 Well , well , well.
 
-Let's see what we've got, did we get the stereotypical Wrestle-Boxer, the Pure striker ? 
-The heatmap below, shows wich combination of original features explain the variability in the data, wich is really a really useful insight when trying to cluster fighter's styles    
+Let's see what we've got, did we get the stereotypical features of Wrestle-Boxer, the Pure striker or 'Specialist grappler' ? 
+The heatmap below, shows wich combination of original features explain the variability in the data, wich is really a really useful insight when trying to wich combination of abilities explain different fighting styles    
 ![MMA 'Fighting Styles'](https://github.com/AmineDiro/UFC-fighting-styles/blob/master/PCA_result.png?raw=true)
  
-1.CLuster 1 : 
+1.Ability 1 : 
 * Top 5 features :
 ```
 TIP_Control Time                             0.224394
@@ -48,7 +48,7 @@ Strikes_Ground Leg Strikes_Attempts          0.103285
 TIP_Side Control Time                        0.105258
 ```
 
-2.CLuster 2 : 
+2.Ability 2 : 
 * Top 5 features :
 ```
 TIP_Ground Control Time                  0.262890
@@ -66,7 +66,7 @@ Strikes_Ground Leg Strikes_Attempts          0.103285
 TIP_Side Control Time                        0.105258
 ```
 
-3.CLuster 3 : 
+3.Ability 3 : 
 * Top 5 features :
 ```
 Strikes_Clinch Head Strikes_Attempts         0.319705
@@ -84,7 +84,7 @@ Strikes_Distance Leg Kicks_Attempts           -0.182671
 Strikes_Distance Head Kicks_Attempts          -0.175149
 ```
 
-4.CLuster 4 : 
+4.Ability 4 : 
 * Top 5 features :
 ```
 TIP_Mount Control Time            0.246223
@@ -102,7 +102,7 @@ Strikes_Clinch Significant Punches_Attempts   -0.267636
 Strikes_Ground Body Strikes_Attempts          -0.247264
 ```
 
-5.CLuster 5 : 
+5.Ability 5 : 
 * Top 5 features :
 ```
 Strikes_Leg Total Strikes_Attempts           0.335641
@@ -149,4 +149,8 @@ I can't explain why this is a feature, this is a feature of holes in you're game
 
 ### V2. What's next ? 
 
-
+1. Applying K means aglorithm to cluster fighters 
+2. A more in-depth analysis of the features can be done , i need to select more wisely the features( i did this in the v1 y eliminating features that are highly correlated with each other) 
+2Bis.This analysis is all about fighting 'Offense' : This was a great insight my brother had, all stats show fighting offense ability, a stats about fighting defense should be calculated relative to your oppents landed Versus Attempts ratio : A great boxer ( Floyd Mayweather for instance) reduces the Landed AND attempts of his oppenents -relative to their previous fights- when facing him.
+This should be added to the model
+3. Use other clusetring algorithms like t-SNE which is particularly well suited for the visualization of high-dimensional datasets
