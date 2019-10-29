@@ -121,18 +121,22 @@ TIP_Misc. Ground Control Time                 -0.184458
 ```
 ### Analysis 
 
-Well first of all , i deleted features when highly correlated with each other, so the features i got after the PCA should be take n  with a grain of salt as its not the only 'important feature'.
+Well first of all , i deleted features when highly correlated with each other, so the features i got after the PCA should be taken  with a grain of salt as it s not the only 'important feature'.
 
 **A first explanation is that the feature 1 :** 
-It correlates positively with all features, strongly with striking, less with knock downs , grappling reversals , kick in the ground ( wich is stupid) and 'side control' : it's the equivalent of having good striking,  goodground strikes in some form of a guard.
+It correlates positively with all features, strongly with striking, less with knock downs , grappling reversals , kick in the ground ( wich is stupid) and 'side control' : it's the equivalent of having good striking,  good ground strikes in some form of a guard.
 
 
 **A first explanation is that the feature 2:**
-The second Feature is really interesting, it correlates  highly with ground control time , ground, half guard control  and ground strikes. Less correlation with  grappling reversals, leg strikes in the ground ( again, stupid you'll likely lose position for little damage). This for me feels like the ability to grapple this feature explains 12% of the variability of data
+The second Feature is really interesting, it correlates  highly with ground control time , ground strikes, half guard control  and ground strikes. Less correlation with  grappling reversals, leg strikes in the ground ( again, stupid you'll likely lose position for little damage). 
+This for me feels like the ability to grapple, the feature explains 12% of the variability of data
 
 **A first explanation is that the feature 3:**
-Now the difference  of this feature comes from the ability to land strikes at clinching distance,and body strikes and -wait for it- Grappling standup. Correlate negatively with ground punches, distance leg kicks and head kick.
-Ok, somebody who strikes at clinching distance, try to stand up and don't like to throw kicks at distance. This sounds like a striker when fighting a wrestler/grappler. He will end up in a tie up and he 'll avoid to throw kicks at distance so he avoids getting taken down. 
+Now, the difference  of this feature comes from the ability to land strikes at clinching distance,and body strikes and -wait for it- Grappling standup. 
+Correlate negatively with ground punches, distance leg kicks and head kick.
+
+Ok, somebody who strikes at clinching distance, try to stand up and don't like to throw kicks at distance. This sounds like a striker when fighting a wrestler/grappler.
+He will end up in a tie up and he 'll avoid to throw kicks at distance so he avoids getting taken down. 
 
 
 **A first explanation is that the feature 4:**
@@ -142,9 +146,9 @@ Well, this is a strangler. This is the ability to grapple and throw hay makers b
 
 
 **A first explanation is that the feature 5:**
-THis is weird, as a feature of fighting it's positively correlated with strikes in all distances, clinch time and mount control time , negatively with ground strikes and ground control time
+This is weird, as a feature of fighting it's positively correlated with strikes at all distances, clinch time and mount control time , negatively coorr with ground strikes and ground control time
 
-I can't explain why this is a feature, this is a feature of holes in you're game maybe ... 
+I can't explain why this is a feature, this is a feature of holes in your game maybe ... 
 
 
 ### V2. What's next ? 
